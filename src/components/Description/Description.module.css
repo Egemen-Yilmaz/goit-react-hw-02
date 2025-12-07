@@ -1,0 +1,15 @@
+.descriptionContainer {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.title {
+    color: #4a4a4a;
+    margin-bottom: 0.5rem;
+}
+
+.text {
+    color: #6a6a6a;
+    font-size: 1.1em;
+}

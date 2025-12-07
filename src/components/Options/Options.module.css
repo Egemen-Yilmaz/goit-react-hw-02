@@ -1,0 +1,21 @@
+/* Options.module.css */
+.optionsContainer {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+/* Tüm butonların temel stili index.css'ten geliyor. Burada sadece özelleştirmeler yapıyoruz. */
+.optionButton {
+    background-color: #e0f7fa;
+    color: #00796b;
+    border: none;
+    font-weight: bold;
+}
+
+.optionButton:hover {
+    background-color: #b2ebf2;
+}

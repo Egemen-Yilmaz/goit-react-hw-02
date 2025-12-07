@@ -1,0 +1,26 @@
+/* Feedback.module.css */
+.feedbackList {
+    list-style: none; /* Varsayılan liste işaretlerini kaldır */
+    padding: 0;
+    text-align: left;
+    max-width: 300px;
+    margin: 0 auto; /* Ortalamak için */
+    border: 1px solid #cfd8dc;
+    border-radius: 8px;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    color: #333;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.feedbackItem {
+    margin-bottom: 0.5rem;
+    font-size: 1.1em;
+    padding: 5px 0;
+    border-bottom: 1px dashed #eee;
+}
+
+.feedbackItem span {
+    font-weight: bold;
+    color: #00bcd4;
+}
