@@ -1,16 +1,107 @@
-# React + Vite
+# goit-react-hw-02
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Goit React Homework #02 - React Vite Project
 
-Currently, two official plugins are available:
+## 🚀 Proje Teknolojileri
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React** 19.2.0
+- **Vite** 7.2.4
+- **React-DOM** 19.2.0
+- **Prettier** - Kod formatı standardı
+- **ESLint** - Kod kalitesi kontrolü
 
-## React Compiler
+## 📋 Proje Gereksinimleri
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+✅ Vite ile oluşturulmuş React projesi  
+✅ CSS Modules desteği  
+✅ Prettier entegrasyonu (`npm run format`)  
+✅ GitHub Pages ve Vercel uyumlu ayarlar  
+✅ src/components klasöründe bileşen yapısı  
+✅ Varsayılan export (export default) kullanımı
 
-## Expanding the ESLint configuration
+## 📂 Proje Yapısı
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+src/
+├── components/          # React bileşenleri
+│   └── [Bileşen Adı]/
+│       ├── ComponentName.jsx      # JSX dosyası
+│       └── ComponentName.module.css # CSS Module dosyası
+├── App.jsx
+├── App.css
+├── main.jsx
+└── index.css
+```
+
+## 🛠️ NPM Komutları
+
+```bash
+# Geliştirme sunucusunu başlat
+npm run dev
+
+# Üretim için build yap
+npm run build
+
+# Build'i görüntüle
+npm run preview
+
+# Kodu Prettier ile formatla
+npm run format
+
+# ESLint kontrolü yap
+npm run lint
+```
+
+## 🌐 Deployment
+
+### GitHub Pages
+
+- Base URL: `/goit-react-hw-02/`
+- `vite.config.js` dosyasında otomatik olarak ayarlanmıştır
+
+### Vercel
+
+- `vercel.json` dosyası otomatik yapı ayarlarını içerir
+- GitHub'dan bağladığınızda otomatik deploy olur
+
+## 📝 Bileşen Oluşturma Şablonu
+
+Her yeni bileşen için:
+
+1. `src/components/ComponentName/` klasörü oluşturun
+2. `ComponentName.jsx` dosyası oluşturun
+3. (İsteğe bağlı) `ComponentName.module.css` dosyası oluşturun
+4. Varsayılan export ile dışa aktar
+
+### Örnek:
+
+```jsx
+// src/components/Button/Button.jsx
+import styles from './Button.module.css';
+
+export default function Button({ text }) {
+  return <button className={styles.btn}>{text}</button>;
+}
+```
+
+```css
+/* src/components/Button/Button.module.css */
+.btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+```
+
+## 📚 Kaynaklar
+
+- [Vite Resmi Sitesi](https://vite.dev)
+- [React Resmi Sitesi](https://react.dev)
+- [Prettier Resmi Sitesi](https://prettier.io)
